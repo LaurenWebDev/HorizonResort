@@ -1,0 +1,134 @@
+@font-face {
+  font-family: Author;
+  src: url("../assests/Author.otf");
+}
+
+/* Variables */
+:root {
+  --primary-color: rgb(36, 80, 212);
+  --second-color: #FACB80 ;
+  --third-color:  #30D9C8;
+  --dark-color: #08101C;
+}
+
+/* Core Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Old Standard TT', serif;
+}
+
+
+/* Utility Styles */
+.text-primary {
+  color: var(--second-color);
+  font-size: 2.5rem;
+}
+
+.container-1 {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  background: var(--second-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: var(--primary-color);
+  padding: .75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25rem;
+}
+
+.btn:hover {
+  background: var(--second-color);
+  color: var(--primary-color);
+}
+
+img {
+  width: 100%;
+}
+
+/* Nav */
+#navbar {
+  background: var(--primary-color);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+/* Header */ 
+#header {
+  background: url('../img/Resort.jpg') no-repeat center center/cover;
+  height: 87vh;
+  margin-bottom: 20px;
+}
+
+#header .header-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+}
+
+#header h1{
+  font-family: Author;
+  color: #fff;
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px var(--dark-color);
+}
+
+
+.attractions-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  height: 100vh;
+}
+
+/*.attractions-content > *:first-child {
+  grid-column: 1 / span 2;
+  align-items: center;
+}*/
+
+
+
+/* Amenities*/
+
+/* Attractions */
+
+/* Testimonials */
+
+/* Book Now */
